@@ -1,0 +1,20 @@
+{
+  "name": "rx-sanity",
+  "version": "0.0.0",
+  "description": "The human-friendly way to use RxJs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nomnomnomnom/rx-sanity.git"
+  },
+  "author": "nomnomnomnom",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "2a5e5bc31338bdd6e346c85ce4bafc2840ca21c8",
+  "bugs": {
+    "url": "https://github.com/nomnomnomnom/rx-sanity/issues"
+  }
+}
