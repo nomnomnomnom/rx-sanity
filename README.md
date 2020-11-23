@@ -53,20 +53,20 @@ Let's look at a simple component in a TODO app.  Ignoring the template, which is
 <br />
 
 <table>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ### Rx-Sanity RxJs
 
 </td>
-<td>
+<td width="50%">
 
 ### Traditional RxJs
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ```javascript
 @rxSanity // defines setters/getters for MiniStores
@@ -101,7 +101,7 @@ class TodoListComponent {
 ```
 
 </td>
-<td>
+<td width="50%">
 
 ```javascript
 
@@ -138,8 +138,8 @@ class TodoListComponent {
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 
 #### Pros
@@ -156,7 +156,7 @@ class TodoListComponent {
   * Imperative style.
 
 </td>
-<td>
+<td width="50%">
 
 #### Pros
   * Relationships between observables are perfectly solved for the dependent observable.
@@ -189,20 +189,20 @@ We'll assume there's a new component in the template for adding a TODO task whic
 <br />
 
 <table>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ### Rx-Sanity RxJs
 
 </td>
-<td>
+<td width="50%">
 
 ### Traditional RxJs
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ```javascript
 @rxSanity
@@ -252,7 +252,7 @@ class TodoListComponent {
 ```
 
 </td>
-<td>
+<td width="50%">
 
 
 ```javascript
@@ -316,8 +316,8 @@ class TodoListComponent {
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 
 #### Pros
@@ -332,7 +332,7 @@ class TodoListComponent {
   * ... none?
 
 </td>
-<td>
+<td width="50%">
 
 #### Pros
   * (Mostly) perfectly represents the relationships between observables.
@@ -358,20 +358,20 @@ Now we're being told the users want to **remove** TODOs, too.  One more round of
 
 
 <table>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ### Rx-Sanity RxJs
 
 </td>
-<td>
+<td width="50%">
 
 ### Traditional RxJs
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ```javascript
 @rxSanity
@@ -428,7 +428,7 @@ class TodoListComponent { // CHANGED
 ```
 
 </td>
-<td>
+<td width="50%">
 
 ```javascript
 
@@ -516,8 +516,8 @@ class TodoListComponent {
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 
 #### Pros
@@ -529,7 +529,7 @@ class TodoListComponent {
   * ... none?
 
 </td>
-<td>
+<td width="50%">
 
 #### Pros
   * (Mostly) perfectly represents the relationships between observables.
@@ -555,20 +555,20 @@ Lastly, let's see how hard it is when a change in requirements happens, everythi
 <br />
 
 <table>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ### Rx-Sanity RxJs
 
 </td>
-<td>
+<td width="50%">
 
 ### Traditional RxJs
 
 </td>
 </tr>
-<tr style="vertical-align: top">
-<td>
+<tr>
+<td style="width: 50%" width="50%" valign="top">
 
 ```javascript
   ...
@@ -586,7 +586,7 @@ Lastly, let's see how hard it is when a change in requirements happens, everythi
 ```
 
 </td>
-<td>
+<td width="50%">
 
 ```javascripts
   // No.
@@ -666,3 +666,5 @@ export class PushHelpers {
   }
 }
 ```
+
+
