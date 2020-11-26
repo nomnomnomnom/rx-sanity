@@ -61,7 +61,7 @@ Let's look at a simple component in a TODO app.  Ignoring the template, which is
 </td>
 <td width="50%">
 
-### Traditional RxJs
+### Declarative RxJs
 
 </td>
 </tr>
@@ -69,7 +69,7 @@ Let's look at a simple component in a TODO app.  Ignoring the template, which is
 <td style="width: 50%" width="50%" valign="top">
 
 ```javascript
-@rxSanity // defines setters/getters for MiniStores
+@rxSanity // defines setters/getters for MiniStores (BehaviorSubjects)
 class TodoListComponent {
   currentUser$ = this.userStore.currentUser$
   todos$ = new MiniStore(undefined)
@@ -149,7 +149,6 @@ class TodoListComponent {
   * No "pipes-without-subscribers" timing issues: when the observables don't have subscribers at expected times: e.g. ngIf hides the element with the "async pipe".
   * No "leaked-hidden-subscriptions" timing issues: e.g. via `shareReplay`.
 
-
 #### Cons
   * Could have "shared-state" timing issues: when multiple functions could set `currentUser` while another function is expecting `currentUser` to stay the same before and after an asynchronous call.
   * `switchFetch` is odd.
@@ -197,7 +196,7 @@ We'll assume there's a new component in the template for adding a TODO task whic
 </td>
 <td width="50%">
 
-### Traditional RxJs
+### Declarative RxJs
 
 </td>
 </tr>
@@ -366,7 +365,7 @@ Now we're being told the users want to **remove** TODOs, too.  One more round of
 </td>
 <td width="50%">
 
-### Traditional RxJs
+### Declarative RxJs
 
 </td>
 </tr>
@@ -563,7 +562,7 @@ Lastly, let's see how hard it is when a change in requirements happens, everythi
 </td>
 <td width="50%">
 
-### Traditional RxJs
+### Declarative RxJs
 
 </td>
 </tr>
@@ -598,7 +597,7 @@ Lastly, let's see how hard it is when a change in requirements happens, everythi
 
 <br />
 
-It's very apparent how easily the "Traditional" RxJS approach taken on the right is not conducive to productivity OR correctness despite its attempt at declarative programming.  If I were to compare two messes, I'd rather deal with messy code written in the style on the left than the style on the right, and I'd trust a junior developer more to successfully fix the code on the left compared to code on the right.
+It's very apparent how easily the "Declarative" RxJS approach taken on the right is not conducive to productivity OR correctness despite its attempt at declarative programming.  If I were to compare two messes, I'd rather deal with messy code written in the style on the left than the style on the right, and I'd trust a junior developer more to successfully fix the code on the left compared to code on the right.
 
 <br />
 
@@ -662,7 +661,7 @@ export class PushHelpers {
   protected cdr;
   changed(prop) {
     this[prop] = shallowClone(this[prop]);
-    this.cdr.detectChanges(); // hi
+    this.cdr.detectChanges();
   }
 }
 ```
